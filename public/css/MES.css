@@ -1,0 +1,413 @@
+/*css样式重置*/
+*{margin: 0;padding: 0;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, button {
+    margin: 0;
+    padding: 0;
+    resize: none;
+}
+.pr {
+    position: relative;
+}
+.fl{
+	float: left;
+}
+.hearderRt{         
+    margin-top: 55px;
+    font-size: 14px;
+}
+.fr{
+    float: right;
+}
+.pa {
+    position: absolute;
+}
+ol, ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #231815 !important;
+}	
+a:hover{text-decoration: none !important;}
+.tc {
+    text-align: center;
+}
+/*字体相关*/
+.f12{font-size: 12px;}
+.f18 {
+    font-size: 18px;
+}
+.f30 {
+    font-size: 30px;
+}
+.f20{
+	font-size: 20px;
+}
+.f16{
+	font-size: 16px;
+}
+.f24 {
+    font-size: 24px;
+}
+.f22 {
+    font-size: 22px;
+}
+.f15 {
+    font-size: 15px;
+}
+.f14 {
+    font-size: 14px;
+}
+.f28{
+    font-size: 28px;
+}
+/*margin相关*/
+.mt-30{
+	margin-top: 30px;
+}
+.mt-25{
+	margin-top: 25px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mt40{
+    margin-top: 40px;
+}
+/*padding相关*/
+.pb10 {
+    padding-bottom: 10px;
+}
+.pt10 {
+    padding-top: 10px;
+}
+.pt20{
+    padding-top: 20px;
+}
+.pb50{
+    padding-bottom: 50px;
+}
+/*顶部导航样式*/
+.container{
+    max-width: 1200px !important;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+.header{
+	height:100px;
+}
+.icon-logo {
+    width: 87px;
+    height: 31px;	
+    margin-top: 45px;
+    /* margin-left: 65px;	 */
+    float: left;
+    background: url("../img/bg-icon.png") 0 0 no-repeat;
+}
+.active{
+    border-bottom: 1px solid #000;
+}
+.navList{
+	margin: 50px 0 0 200px;
+}
+
+.navList li {
+    position: relative;
+    padding: 0 30px;
+}
+.navList li.bor a:hover{
+	text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+.navList li a {
+    font-size: 16px;
+    padding: 7px 5px;
+    line-height: 100%;
+}
+.block {
+    display: block;
+}	
+.secondNav {
+    left: -35px;
+    top: 30px;
+    z-index: 20;
+    width: 250px;
+    height:0px;
+    overflow: hidden;
+    padding:0px 48px;
+    transition: all .5s linear;
+}
+li:hover>ul{
+    height: 200px;
+    padding:30px 48px;
+    background-color: white;
+}
+.secondNav li{
+    display: block;
+    box-sizing: border-box;
+}
+.secondNav li>a:hover{
+    border: 1px solid #cccccc;
+}
+
+.secondNav li a, .navList li.cur .secondNav li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0px;
+    border: 1px solid transparent;
+}
+.navList li a {	
+    font-size: 16px;
+    padding: 7px 5px;
+    line-height: 100%;
+}
+.secondNav li {
+    padding: 0;
+}
+.icon-cart {
+    width: 19px;
+    height: 17px;
+    background-position: -114px -14px !important;
+}
+.hearderRt li {
+    margin-left: 25px;
+}
+/*cont*/
+.cartList {
+    background: #ebebeb;
+}
+.seriePd {
+    padding: 50px 0 78px;
+}
+.oh {
+    overflow: hidden;
+}
+.serieHd {
+    width: 360px;
+    margin: 50px auto;
+}
+.serieHd .line {
+    left: 0;
+    top: 15px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    font-size: 0;
+    overflow: hidden;
+    background: #929292;
+}
+.serieHd .title {
+    background: #ebebeb;
+    padding: 0 15px;
+}
+
+.lh30 {
+    line-height: 30px;
+}
+
+.ib {
+    display: inline-block;
+}
+.block {
+    display: block;
+}
+.lh30 {
+    line-height: 30px;
+}
+	.tc {
+	    text-align: center;
+	}
+
+.cartJoin, .cartInfo {
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    padding: 30px;
+}
+.cartJoin .text {
+    height: 44px;
+    line-height: 22px;
+    color: #7c7c7d;	
+    -webkit-line-clamp: 2;
+    margin-top: 15px;
+}
+.cartJoin .price {
+    line-height: 40px;
+}
+
+.cred {	
+    color: #c4284e;
+}
+
+.center {
+    margin: 0 auto;
+}
+.showMore {
+    display: block;
+    width: 118px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #2f2725;
+    margin-top: 40px;
+    color: #231815;
+}
+.showMore:hover{
+    background-color: #000;
+    color: #fff !important;
+}
+.material {
+    padding: 75px 0 0;
+}
+
+.bgGray {
+    background-color: #f6f6f6;
+}
+.bgGray5 {
+    background: #e5e5e6;
+}
+
+
+.img-ewm{
+	margin: 0 auto;
+	margin-top: 25px;
+	width: 219px;
+	height: 219px;
+}
+.introduce {
+    padding: 80px 0;
+}
+.hotline {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;	
+    text-align: center;
+    border: 1px solid #535150;
+    font-size: 30px;
+    font-weight: bold;
+}
+/*footer*/
+.footer {
+    padding: 20px 0 96px !important;
+}
+.icon-up-arrow {
+    left: 50%;
+    top: 0;
+    margin-left: -15px;
+    width: 31px;
+    height: 10px;
+    background-position: -138px -21px !important;
+}
+.icon-ft-logo {
+    width: 125px;
+    height: 44px;
+    background-position: 0 -35px !important;
+    margin-top: 50px;
+}
+
+[class^="icon-"] {
+    background: url("../img/bg-icon.png") 0 0 no-repeat;
+}
+.backTop p {
+    -webkit-transform: scale(0.8);
+    line-height: 160%;
+    color: #5a5858;
+}
+.copyright {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+.c9 {
+    color: #999;
+}
+.aboutTitle h2 {
+    height: 22px;
+    line-height: 22px;
+    padding: 0 20px;
+    background: #fff;
+    color: #5a5858;
+}
+.defineCard {
+    margin: 30px 0 50px;
+}
+
+.aboutTitle .line {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -1px;
+    border-top: 1px solid #adaeaf;
+}
+.cred3 {
+    color: #d6184e;
+}
+.authentCont {
+    width: 800px;
+    padding: 70px 0 110px;
+    margin: 0 auto;
+}
+.authentList .name {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    letter-spacing: -.4rem;
+}
+.lh18 {
+    line-height: 18px;
+}
+.authentList p {
+    margin: 20px 0 0 10px;
+}
+.authentBd {
+    margin-top: 45px;
+    padding-top: 45px;
+    border-top: 1px solid #a7a7a8;
+}
+.authentBdInfo li {
+    width: 130px;
+}
+.authentBdInfo li em {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px;
+    background: url(../img/authent-icon.png) 0 0 no-repeat;
+}
+.authentBdInfo .auth-icon2 {
+    background-position: -90px 0;
+}
+.authentBdInfo .auth-icon3 {
+    background-position: -180px 0;
+}
+.authentBdInfo .auth-icon4 {
+    background-position: -270px 0;
+}
+.authentBdInfo .auth-icon5 {
+    background-position: -360px 0;
+}
+.authentList li {
+    padding: 0 10px;
+}
+.authentList2 em {
+    display: block;
+    float: left;
+    width: 66px;
+    height: 65px;
+    margin: 0 18px;
+    background: url(../img/authent-icon2.png) 0 0 no-repeat;
+}
+.authentList2 .auth-icon2 {
+    background-position: 0 -69px;
+}
+.authentList2 .auth-icon3 {
+    background-position: 0 -138px;
+}
+.authentList2 .auth-icon4 {
+    background-position: 0 -207px;
+}
+
+

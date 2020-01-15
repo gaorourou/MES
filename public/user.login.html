@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>登陆MES</title>
+	<link rel="stylesheet" href="css/MES.css">
+	<link rel="shortcut icon" href="./img/MESfavicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<div class="bgf header">
+		<div class="container">
+			<a href="/" class="icon-logo fl"></a>
+				<ul class="navList fl">
+					<li class="fl bor"><a href="index.html">首&nbsp&nbsp&nbsp&nbsp页</a></li>
+					<li class="fl pr"><a href="cake.html">蛋&nbsp&nbsp&nbsp&nbsp糕</a>
+							<ul class="pa secondNav">
+									<li><a href="">全部</a></li>
+									<li><a href="">情感系列</a></li>
+									<li><a href="">极致系列</a></li>
+									<li><a href="">趣味系列</a></li>
+									<li><a href="">口味系列</a></li>
+							</ul>
+					</li>
+					<li class="fl bor"><a href="coffee.html">下午茶</a></li>
+					<li class="fl bor"><a href="surround.html">生日周边</a></li>
+					<li class="fl pr">
+						<a href="about.html">关于MES</a>
+						<ul class="pa secondNav">
+							<li><a href="">关于MES</a></li>
+							<li><a href="">MES日志</a></li>
+							<li><a href="">大客户&商家合作</a></li>
+							<li><a href="">联系我们</a></li>
+						</ul>
+					</li>   
+				</ul>
+				<ul class="fr hearderRt clearfix">
+					<li class="fl" id="cartNumInfo">
+						<a href="/cart" class="icon-cart pr block" id="headerCart">
+						<em class="pa block numb" id="cartNum" style="display: none;"></em>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="user.login.html" class="block login" id="headerLogin">登录</a>
+					</li>
+				</ul>
+		</div>
+	</div>
+	<div class="cont">
+		<div class="f24 welcome">欢迎加入MES Family !</div>
+		<div class="loginArea">
+			<div class="center loginInfo">
+				<ul class="f22 tc loginNav" id="loginTypeTab">
+						<li class="ib cur" op="loginTypeOne" data-type="mobile"><a href="javascript:;" class="color-m">手机验证码登录</a></li>
+						<li class="ib" op="loginTypeOne" data-type="member"><a href="javascript:;">MES会员登录</a></li>
+				</ul>
+				
+				<div class="loginCont">
+					<!-- 手机验证码登陆 -->
+					<div class="loginItem">
+						<form action="">
+							<div class="pr inputGroup">
+								<input type="text" class="inputText" placeholder="请输入手机号码" id="mobile">
+								<input type="button" class="pa verifyGet loginGray" value="获取验证码" data-value="获取验证码" id="getCheckCodeBt">
+							</div>
+							<div class="pr inputGroup">
+								<input type="text" class="inputText" placeholder="请输入短信验证码" id="mobileCheckCode">
+							</div>
+							<div class="empty"></div>
+							<a href="javascript:;" class="f24 ls1 loginBtn loginGray" id="mobileLoginButton" onclick="reg()">登 录</a>
+							<p class="f14 tc c6 mt10">使用未注册的手机号登录时，将自动注册MES会员账号</p>
+						</form>
+					</div>
+					<!-- 密码登陆 -->
+					<div class="loginItem" style="display: none;">
+						<form action="">
+							<div class="pr inputGroup">
+									<input type="text" class="inputText" placeholder="请输入手机号码 / 用户名" id="userName">
+							</div>
+							<div class="pr inputGroup">
+									<input type="password" class="inputText" placeholder="请输入密码" id="password">
+							</div>
+							<div class="empty">
+									<a href="/user/forget?backurl=%2F" class="fr f16 c6 pt10 unl" id="forgetPass">忘记密码？</a>
+							</div>
+							<a href="javascript:;" class="f24 ls1 loginBtn loginGray" id="memberLoginButton" onclick="login()">登 录</a>
+						</form>
+					</div>
+				</div>
+				<div class="center loginOther">
+					<div class="pr tc">
+						<div class="pa titleLine"></div>
+						<span class="pr f18 c6 bgf loginTitle">其他登录方式</span>
+					</div>
+					<div class="mt20 tc otherList">
+						<a href="javascript:;" class="icon-wx ib" id="wechatLogin"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bgGray5 pt10 pb10 tc f22">北京五环内免费配送　|　请至少提前5小时订购</div>
+		<!--introduce start-->
+		<div class="bgGray">
+			<div class="row m-0	introduce">
+				<div class="col-lg-6">
+					<p class="f22 tc">加入MES微商城<br>随享便捷</p>
+					<div class="img-ewm">
+						<img src="../img/ewm.png"  width="219" height="219" alt="">
+					</div>
+				</div>
+				<div class="col-lg-6 p-0">
+					<div class="fr introCont">
+						<h3 class="f28">MES每实 ︱ 用爱与热情重新定义蛋糕</h3>
+						<div class="text f15 mt-30 pr-5">	
+							纵使温室技术与培植技术再怎么发达，也无法取代食物所在地的原汁原味。<br>
+							MES每实在全世界挑选大自然本真质朴的美味食材。所有原材料均来自其适宜产地。这不仅是一种因地制宜，更是顺应，尊重自然的健康之道。土耳其的榛子、新西兰的奇异果、泰国的金枕榴莲、牙买加的摩根船长朗姆酒、还有上品的白兰地……<br>
+							食材在MES每实的意义，不仅是味蕾的满足，更是一种心灵的邂逅。
+						</div>
+						<div class="mt-25 f14">
+								<p>订购咨询热线：</p>
+								<div class="mt10 hotline">4000-600-700</div>
+								<p class="mt10">人工服务时间：8:30-20:00/配送时间：10:00-22:00/北京5环内免费配送</p>
+								<p class="mt10">每日17:00前订单，可预定当日送达；17:00以后订单，可预定次日送达</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--footer-->
+	<div class="footer tc container px-0">
+		<a href="javascript:;" class="pr ib pt10 backTop f12" onclick="$('html,body').animate({scrollTop: 0}, 500);"><em class="icon-up-arrow pa"></em>
+			<p>返回顶部<br>BACK TO TOP</p></a>
+		<em class="icon-ft-logo block center"></em>
+		<div class="c9 copyright f12">京ICP备13052268号-1 京公网安备11011302001402号 2019@mescake.com All rights reserved</div>
+	</div>
+	<script>
+		//手机号登录
+		var txtphone=document.getElementById("mobile");
+		var txtpin=document.getElementById("mobileCheckCode");
+		var moLogBtn=document.getElementById("mobileLoginButton");
+		var ispass=false;
+		var pass=false;
+		txtphone.oninput=function(){
+			var reg=/^1[3-9]\d{9}$/
+			var getCheckCodeBt=document.getElementById("getCheckCodeBt");
+			if(reg.test(this.value)){
+				getCheckCodeBt.classList.add("logintrue");
+				pass=true;
+			}else{
+				getCheckCodeBt.classList.remove("logintrue");
+				pass=false;
+			}
+			test();
+		};
+		txtpin.oninput=function(){
+			var reg=/^\d{6}$/
+			if(reg.test(this.value)){
+				ispass=true;
+			}else{
+				ispass=false;
+			}
+			test();
+		};
+		function test(){
+      if(pass&&ispass){
+				moLogBtn.classList.add("logintrue");
+			}else{  
+				moLogBtn.classList.remove("logintrue");
+			}
+		};	
+		//账号密码登录
+		var unametxt=document.getElementById("userName");
+		var upwdtxt=document.getElementById("password")
+		var meLogBtn=document.getElementById("memberLoginButton");
+		unametxt.onblur=upwdtxt.onblur=function(){
+			if(unametxt.value==""){
+				unametxt.focus();
+			}else if(upwdtxt.value==""){
+				upwdtxt.focus();
+			}else{
+				meLogBtn.classList.add("logintrue")
+			}
+		}
+
+		// var loginTypeTab=document.getElementById("loginTypeTab");
+		// loginTypeTab.onclick=function(e){
+		// 	var loginPage=e.target;
+		// 	if(loginPage.nodeName==="A"){
+		// 		var loginCont=document.getElementsByClassName("loginCont")[0];
+		// 		
+		// 	}
+		// }
+		/*手机号登录 和 账号密码登录的切换*/
+		var $mobile=document.querySelector("[data-type=mobile]");
+		var $member=document.querySelector("[data-type=member]");
+		var loginCont=document.getElementsByClassName("loginCont")[0];
+		$mobile.onclick=function(){
+			loginCont.firstElementChild.style="display:block";
+			loginCont.lastElementChild.style="display:none";
+			$mobile.firstElementChild.classList.add("color-m");
+			$member.firstElementChild.classList.remove("color-m");
+		};
+		$member.onclick=function(){
+			loginCont.lastElementChild.style="display:block";
+			loginCont.firstElementChild.style="display:none";
+			$member.firstElementChild.classList.add("color-m");
+			$mobile.firstElementChild.classList.remove("color-m");
+		}
+	</script>
+	<script>
+		function login(){
+			var $uname=userName.value;
+			var $upwd=password.value;
+			var xhr=new XMLHttpRequest();
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState===4&&xhr.status===200){
+					var result=xhr.responseText;
+					if(result==1){
+						alert("登录成功");
+						window.location.href="index.html"
+					}else{
+						alert("登录失败")
+					}
+				}
+			}
+			xhr.open("get",`/user/v1/login/${$uname}&${$upwd}`,true);
+			xhr.send();
+		}
+	</script>
+	<script>
+		function reg(){
+			if(!mobile.value.trim()){
+				alert('电话号码不能为空');
+				return;
+			}
+			if(!mobileCheckCode.value.trim()){
+				alert('请输入验证码');
+				return;
+			}
+			if(mobile.value!==""&&mobileCheckCode.value!==""){
+				var $phone=mobile.value;
+				var $code=mobileCheckCode.value;
+				var xhr=new XMLHttpRequest();
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4&&xhr.status==200){
+						var result=xhr.responseText;
+						if(result==1){
+							alert("注册成功...正在登录");
+							alert("登录成功");
+							window.location.href="index.html";
+							// $("#headerLogin").style("display","none");
+							// console.log($("#headerLogin"));
+						}else{
+							alert("登录失败")
+						}
+					}
+				}
+				xhr.open("post","/user/v1/reg",true);
+				xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+				var formdata=`phone=${$phone}&code=${$code}`;
+				xhr.send(formdata);
+			}	
+		}
+	</script>
+</body>
+</html>

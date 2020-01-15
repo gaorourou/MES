@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>MES每实官网_24小时蛋糕订购_5小时新鲜送达</title>
+  <link rel="stylesheet" type="text/css" href="css/MES.css"/>
+  <link rel="shortcut icon" href="./img/MESfavicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--顶部导航开始-->
+<!-- <div class="bgf header">
+  <div class="container">
+    <a href="/" class="icon-logo fl"></a>
+      <ul class="navList fl">
+        <li class="fl bor"><a href="index.html">首&nbsp&nbsp&nbsp&nbsp页</a></li>
+        <li class="fl pr"><a href="cake.html">蛋&nbsp&nbsp&nbsp&nbsp糕</a>
+          <ul class="pa secondNav">
+            <li><a href="">全部</a></li>
+            <li><a href="">情感系列</a></li>
+            <li><a href="">极致系列</a></li>
+            <li><a href="">趣味系列</a></li>
+            <li><a href="">口味系列</a></li>
+          </ul>
+        </li>
+        <li class="fl bor"><a href="coffee.html" class="active">下午茶</a></li>
+        <li class="fl bor"><a href="surround.html">生日周边</a></li>
+        <li class="fl pr">
+          <a href="about.html">关于MES</a>
+          <ul class="pa secondNav">
+            <li><a href="">关于MES</a></li>
+            <li><a href="">MES日志</a></li>
+            <li><a href="">大客户&商家合作</a></li>
+            <li><a href="">联系我们</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="fr hearderRt clearfix">
+        <li class="fl" id="cartNumInfo">
+          <a href="/cart" class="icon-cart pr block" id="headerCart">
+          <em class="pa block numb" id="cartNum" style="display: none;"></em>
+          </a>
+        </li>
+        <li class="fl">
+          <a href="/user/login?backurl=%2F" class="block login" id="headerLogin">登录</a>
+        </li>
+      </ul>
+    </div>
+</div> -->
+<div id="header"></div>
+	<script>
+    $("#header").load("header.html",function(){
+      console.log($("ul.navList>li>a"))
+      $("ul.navList>li:nth-child(3)>a").css({
+        "border-bottom":"1px solid #333333"
+      })
+    });
+	</script>
+<!--banner-->
+<div class="banner">
+  <img src="img/slide1.jpg" width="100%" class="block" alt="">
+</div>
+<div class="oh cartList pt-4">
+  <div class="pr tc serieHd">
+    <span class="pa line"></span>
+    <span class="pr ib f30 lh30 title">下午茶<span class="block f18 c9">coffee</span></span>
+  </div>
+  <div class="container px-0">
+    <div class="row mb-5 m-0">
+      <div class="col-lg-4">
+        <div class="bg-white">
+          <img class="w-100" src="img/175.png"/>
+          <div class=" cartJoin">
+            <a href="">
+              <p class="font-weight-bold f20">一刻杯（3种口味）</p>
+              <p class="text f16"></p>
+            </a>
+            <div class="f24 cred price">
+              <span>￥105.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bg-white">
+          <img class="w-100" src="img/177-1.jpg"/>
+          <div class=" cartJoin">
+            <a href="">
+              <p class="font-weight-bold f20">蛋糕卷（4种口味）</p>
+              <p class="text f16">蛋糕卷4种口味装</p>
+            </a>
+            <div class="f24 cred price">
+              <span>￥88.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bg-white">
+          <img class="w-100" src="img/194-1.jpg"/>
+          <div class=" cartJoin">
+            <a href="">
+              <p class="font-weight-bold f20">2个装多肉冻芝士</p>
+              <p class="text f16">多肉冻芝士</p>
+            </a>
+            <div class="f24 cred price">
+              <span>￥56.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-4">
+        <div class="bg-white">
+          <img class="w-100" src="img/178-1.jpg"/>
+          <div class=" cartJoin">
+            <a href="">
+              <p class="font-weight-bold f20">抹茶红豆蛋糕卷</p>
+              <p class="text f16"></p>
+            </a>
+            <div class="f24 cred price">
+              <span>￥24.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-4">
+        <div class="bg-white">
+          <img class="w-100" src="img/179-1.jpg"/>
+          <div class=" cartJoin">
+            <a href="">
+              <p class="font-weight-bold f20">黑玫瑰蛋糕卷</p>
+              <p class="text f16"></p>
+            </a>
+            <div class="f24 cred price">
+              <span>¥24.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-4">
+        <div class="bg-white">
+          <img class="w-100" src="img/177-1.jpg"/>
+          <div class=" cartJoin">
+            <a href="">
+              <p class="font-weight-bold f20">咖啡巧克力蛋糕卷</p>
+              <p class="text f16"></p>
+            </a>
+            <div class="f24 cred price">
+              <span>¥20.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-4">
+        <div class="bg-white">
+          <img class="w-100" src="img/153-1.jpg"/>
+          <div class=" cartJoin">
+            <a href="">
+              <p class="font-weight-bold f20">一刻杯套装(6连杯)</p>
+              <p class="text f16">树莓×2,百香果×2,抹茶×2</p>
+            </a>
+            <div class="f24 cred price">
+              <span>¥168.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-4">
+        <div class="bg-white">
+          <img class="w-100" src="img/176-1.jpg"/>
+          <div class=" cartJoin">
+            <a href="">
+              <p class="font-weight-bold f20">百香果蛋糕卷</p>
+              <p class="text f16"></p>
+            </a>
+            <div class="f24 cred price">
+              <span>¥20.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-4 pb-5">
+        <div class="bg-white">
+          <img class="w-100" src="img/134-1.jpg"/>
+          <div class=" cartJoin">
+            <a href="">
+              <p class="font-weight-bold f20">挂耳咖啡</p>
+              <p class="text f16"></p>
+            </a>
+            <div class="f24 cred price">
+              <span>￥88.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="bgGray5 pt10 pb10 tc f22">北京五环内免费配送　|　请至少提前5小时订购</div>
+<div class="bgGray ">
+	<div class="row m-0	introduce">
+		<div class="col-lg-6">
+			<p class="f22 tc">加入MES微商城<br>随享便捷</p>
+			<div class="img-ewm">
+				<img src="img/ewm.png"  width="219" height="219" alt="">
+			</div>
+		</div>
+		<div class="col-lg-6 p-0">
+			<div class="fr introCont">
+				<h3 class="f28">MES每实 ︱ 用爱与热情重新定义蛋糕</h3>
+				<div class="text f15 mt-30 pr-5">
+					纵使温室技术与培植技术再怎么发达，也无法取代食物所在地的原汁原味。<br>
+					MES每实在全世界挑选大自然本真质朴的美味食材。所有原材料均来自其适宜产地。这不仅是一种因地制宜，更是顺应，尊重自然的健康之道。土耳其的榛子、新西兰的奇异果、泰国的金枕榴莲、牙买加的摩根船长朗姆酒、还有上品的白兰地……<br>
+					食材在MES每实的意义，不仅是味蕾的满足，更是一种心灵的邂逅。
+				</div>
+				<div class="mt-25 f14">
+					<p>订购咨询热线：</p>
+					<div class="mt10 hotline">4000-600-700</div>
+					<p class="mt10">人工服务时间：8:30-20:00/配送时间：10:00-22:00/北京5环内免费配送</p>
+					<p class="mt10">每日17:00前订单，可预定当日送达；17:00以后订单，可预定次日送达</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+<div id="cont-ent"></div>
+<script>
+	$("#cont-ent").load("cont_ent.html")
+</script>
+<!-- footer -->
+	<!-- <div class="footer tc container px-0">
+		<a href="javascript:;" class="pr ib pt10 backTop f12" onclick="$('html,body').animate({scrollTop: 0}, 500);"><em class="icon-up-arrow pa"></em>
+			<p>返回顶部<br>BACK TO TOP</p></a>
+		<em class="icon-ft-logo block center"></em>
+		<div class="c9 copyright f12">京ICP备13052268号-1 京公网安备11011302001402号 2019@mescake.com All rights reserved</div>
+	</div> -->
+	<div id="footer"></div>
+	<script>
+		$("#footer").load("footer.html")
+	</script>
+
+</body>
+</html>

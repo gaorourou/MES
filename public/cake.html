@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8" />
+  <title>MES每实官网_24小时蛋糕订购_5小时新鲜送达</title>
+  <link rel="shortcut icon" href="./img/MESfavicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/MES.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--顶部导航开始-->
+<!--<div class="bgf header">
+	<div class="container">
+		<a href="/" class="icon-logo fl"></a>
+		<ul class="navList fl">
+			<li class="fl bor"><a href="index.html">首&nbsp&nbsp&nbsp&nbsp页</a></li>
+			<li class="fl pr"><a href="cake.html" class="active">蛋&nbsp&nbsp&nbsp&nbsp糕</a>
+				<ul class="pa secondNav">
+					<li><a href="">全部</a></li>
+					<li><a href="">情感系列</a></li>
+					<li><a href="">极致系列</a></li>
+					<li><a href="">趣味系列</a></li>
+					<li><a href="">口味系列</a></li>
+				</ul>
+			</li>
+			<li class="fl bor"><a href="coffee.html">下午茶</a></li>
+			<li class="fl bor"><a href="surround.html">生日周边</a></li>
+			<li class="fl pr">
+				<a href="about.html">关于MES</a>
+				<ul class="pa secondNav">
+					<li><a href="">关于MES</a></li>
+					<li><a href="">MES日志</a></li>
+					<li><a href="">大客户&商家合作</a></li>
+					<li><a href="">联系我们</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="fr hearderRt clearfix">
+			<li class="fl" id="cartNumInfo">
+				<a href="/cart" class="icon-cart pr block" id="headerCart">
+				<em class="pa block numb" id="cartNum" style="display: none;"></em>
+				</a>
+			</li>
+			<li class="fl">
+				<a href="/user/login?backurl=%2F" class="block login" id="headerLogin">登录</a>
+			</li>
+		</ul>
+	</div>
+</div> -->
+<div id="header"></div>
+<script>
+    $("#header").load("header.html",function(){
+				console.log($("ul.navList>li>a"))
+				$("ul.navList>li:nth-child(2)>a").css({
+					"border-bottom":"1px solid #333333"
+				})
+			});
+</script>
+<!--banner-->
+    <div class="banner">
+        <img src="img/slide1.jpg" width="100%" class="block" alt="">
+    </div>
+    <div class="oh cartList pt-4">
+        <div class="pr tc serieHd">
+            <span class="pa line"></span>
+            <span class="pr ib f30 lh30 title" id="qinggan">情感系列<span class="block f18 c9">emotional</span></span>
+        </div>
+        <div class="container ">
+            <div class="row m-0">
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/136-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details136.html">
+                                <p class="font-weight-bold f20">致爱-沉醉</p>
+                                <p class="text f16">今夜我不关心人类，我只想你</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥1314.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/152-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details152.html">
+                                <p class="font-weight-bold f20">Mr.Black</p>
+                                <p class="text f16">开黑吧，兄弟</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>¥268.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/135-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details135.html">
+                                <p class="font-weight-bold f20">致爱-钟情</p>
+                                <p class="text f16">独一无二 让爱 淋漓尽致</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>¥999.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/26-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details26.html">
+                                <p class="font-weight-bold f20">许愿</p>
+                                <p class="text f16">玫瑰花中烛，点燃爱的期许</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>¥298.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="oh cartList pt-4">
+        <div class="pr tc serieHd">
+            <span class="pa line"></span>
+            <span class="pr ib f30 lh30 title" id="jizhi">极致系列<span class="block f18 c9">ultimate</span></span>
+        </div>
+        <div class="container ">
+            <div class="row  m-0">
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/143-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details143.html">
+                                <p class="font-weight-bold f20">榴莲迷情</p>
+                                <p class="text f16">喜欢它的人爱的要死</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/124-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details124.html">
+                                <p class="font-weight-bold f20">碾茶金时</p>
+                                <p class="text f16">拾一颗茶心，品一抹真味</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥228.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/19-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details19.html">
+                                <p class="font-weight-bold f20">阿尔卑斯</p>
+                                <p class="text f16">舌尖上的冰与火之歌</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥228.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/33-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details33.html">
+                                <p class="font-weight-bold f20">歌剧院</p>
+                                <p class="text f16">法式经典，奏响半世纪的舌尖乐章</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/9-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details9.html">
+                                <p class="font-weight-bold f20">爱的箴言</p>
+                                <p class="text f16">我轻轻的咬一口，你说的爱我</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="oh cartList pt-4">
+        <div class="pr tc serieHd">
+            <span class="pa line"></span>
+            <span class="pr ib f30 lh30 title" id="quwei">趣味系列<span class="block f18 c9">interesting</span></span>
+        </div>
+        <div class="container ">
+            <div class="row  m-0">
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/32-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details32.html">
+                                <p class="font-weight-bold f20">LUCKY MAN</p>
+                                <p class="text f16">芥末和蛋糕，你能抽中哪种味道</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/10-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details10.html">
+                                <p class="font-weight-bold f20">拔萝卜</p>
+                                <p class="text f16">拔起小萝卜，分享大欢乐</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/22-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details22.html">
+                                <p class="font-weight-bold f20">小爪</p>
+                                <p class="text f16">拍拍手，做我一辈子的小可爱</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥188.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/196.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details196.html">
+                                <p class="font-weight-bold f20">幸运拼图(常规版)</p>
+                                <p class="text f16">不含辛辣大蒜</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>¥228.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/196.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details209.html">
+                                <p class="font-weight-bold f20">幸运拼图(趣味版)</p>
+                                <p class="text f16">究竟是葡萄果干，还是辛辣大蒜</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥228.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/32-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details174.html">
+                                <p class="font-weight-bold f20">LUCKY MAN(星座版)</p>
+                                <p class="text f16">芥末和蛋糕，你能抽中哪种味道</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥208.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="oh cartList pt-4">
+        <div class="pr tc serieHd">
+            <span class="pa line"></span>
+            <span class="pr ib f30 lh30 title" id="kouwei">口味系列<span class="block f18 c9">taste</span></span>
+        </div>
+        <div class="container px-0">
+            <div class="row mb-5 m-0">
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/11-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details11.html">
+                                <p class="font-weight-bold f20">冰珀茉莉</p>
+                                <p class="text f16">感受冷艳下的独特魅力</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥228.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/83-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details83.html">
+                                <p class="font-weight-bold f20">最佳拍档</p>
+                                <p class="text f16">天生的灵魂伴侣</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/38-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details38.html">
+                                <p class="font-weight-bold f20">原味拿破仑</p>
+                                <p class="text f16">美味年轮，巴黎独有的千层酥脆</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/15-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details15.html">
+                                <p class="font-weight-bold f20">千与千薰</p>
+                                <p class="text f16">淡淡的熏香，浅浅的甜味</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/21-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details21.html">
+                                <p class="font-weight-bold f20">英雄本色</p>
+                                <p class="text f16">戒不掉的男人味</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥228.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/36-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details36.html">
+                                <p class="font-weight-bold f20">Happy Hour</p>
+                                <p class="text f16">欢乐相聚时光，怎能少了你</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥298.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/125-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details125.html">
+                                <p class="font-weight-bold f20">树莓夏朵</p>
+                                <p class="text f16">寻找那一颗颗酸甜的法国树莓</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/87-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details87.html">
+                                <p class="font-weight-bold f20">榴莲派对</p>
+                                <p class="text f16">榴莲爱好者的狂欢Party</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/37-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details37.html">
+                                <p class="font-weight-bold f20">布朗尼</p>
+                                <p class="text f16">一场最美丽的失误</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 pb-5">
+                    <div class="bg-white">
+                        <img class="w-100" src="img/8-1.jpg"/>
+                        <div class=" cartJoin">
+                            <a href="details8.html">
+                                <p class="font-weight-bold f20">黑色堡垒</p>
+                                <p class="text f16">能量加油站</p>
+                            </a>
+                            <div class="f24 cred price">
+                                <span>￥198.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+		<!-- <div class="bgGray5 pt10 pb10 tc f22">北京五环内免费配送　|　请至少提前5小时订购</div>
+		<div class="bgGray ">
+			<div class="row m-0	introduce">
+				<div class="col-lg-6">
+					<p class="f22 tc">加入MES微商城<br>随享便捷</p>
+					<div class="img-ewm">
+							<img src="img/ewm.png"  width="219" height="219" alt="">
+					</div>
+				</div>
+				<div class="col-lg-6 p-0">
+					<div class="fr introCont">
+						<h3 class="f28">MES每实 ︱ 用爱与热情重新定义蛋糕</h3>
+						<div class="text f15 mt-30 pr-5">
+							纵使温室技术与培植技术再怎么发达，也无法取代食物所在地的原汁原味。<br>
+							MES每实在全世界挑选大自然本真质朴的美味食材。所有原材料均来自其适宜产地。这不仅是一种因地制宜，更是顺应，尊重自然的健康之道。土耳其的榛子、新西兰的奇异果、泰国的金枕榴莲、牙买加的摩根船长朗姆酒、还有上品的白兰地……<br>
+							食材在MES每实的意义，不仅是味蕾的满足，更是一种心灵的邂逅。
+						</div>
+						<div class="mt-25 f14">
+							<p>订购咨询热线：</p>
+							<div class="mt10 hotline">4000-600-700</div>
+							<p class="mt10">人工服务时间：8:30-20:00/配送时间：10:00-22:00/北京5环内免费配送</p>
+							<p class="mt10">每日17:00前订单，可预定当日送达；17:00以后订单，可预定次日送达</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<div id="cont-ent"></div>
+		<script>
+			$("#cont-ent").load("cont_ent.html")
+		</script>
+    <!-- footer -->
+    <!-- <div class="footer tc container px-0">
+    	<a href="javascript:;" class="pr ib pt10 backTop f12" onclick="$('html,body').animate({scrollTop: 0}, 500);"><em class="icon-up-arrow pa"></em>
+     	 <p>返回顶部<br>BACK TO TOP</p></a>
+    	<em class="icon-ft-logo block center"></em>
+    	<div class="c9 copyright f12">京ICP备13052268号-1 京公网安备11011302001402号 2019@mescake.com All rights reserved</div>
+    </div> -->
+    <div id="footer"></div>
+    <script>
+			$("#footer").load("footer.html")
+		</script>
+</body>
+</html>

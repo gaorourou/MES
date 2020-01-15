@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>MES每实官网_24小时蛋糕订购_5小时新鲜送达</title>
+    <link rel="shortcut icon" href="./img/MESfavicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/MES.css"/>
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!--顶部导航开始-->
+    <div id="header"></div>
+    <script>
+      $("#header").load("header.html",function(){
+        $("ul.navList>li:nth-child(2)>a").css({
+          "border-bottom":"1px solid #333333"
+        })
+      });
+    </script>
+    <div class="cont">
+      <div class="bgGray2">
+        <div class="container tr f14 detailHd">
+          北京五环内免费配送　|　请至少提前5小时订购
+        </div>
+      </div>
+      <div class="container">
+        <div class="clearfix">
+          <div class="fl detailSlider">
+            <!-- Swiper -->
+            <div id="banner">
+              <ul id="ul-imgs">
+                <li>
+                  <a href="javascript:;">
+                    <img src="img/details/136/136-1.jpg" width="500px" height="500px" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <img src="img/details/136/136-2.jpg" width="500" height="500" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <img src="img/details/136/136-3.jpg" width="500" height="500" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <img src="img/details/136/136-4.jpg" width="500" height="500" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <img src="img/details/136/136-1.jpg" width="500px" height="500px" alt="">
+                  </a>
+                </li>
+              </ul>
+              <div id="btn-left"></div>
+              <div id="btn-right"></div>
+              <ul id="ul-idxs">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+               <!--<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                <div class="swiper-slide swiper-slide-active" style="width: 500px; margin-right: 30px;">
+                  <img src="img/details/136-1.jpg" width="500px" height="500px" class="block swiper-lazy swiper-lazy-loaded" alt="">
+                </div>
+                <div class="swiper-slide swiper-slide-next  swiper-slide-active" style="width: 500px; margin-right: 30px;">
+                  <img src="img/details/136-2.jpg" width="500" height="500" class="block swiper-lazy swiper-lazy-loaded" alt="">
+                </div>
+                <div class="swiper-slide" style="width: 500px; margin-right: 30px;">
+                  <img src="img/details/136-3.jpg" width="500" height="500" class="block swiper-lazy swiper-lazy-loaded" alt="">
+                </div>
+                <div class="swiper-slide" style="width: 500px; margin-right: 30px;">
+                  <img src="img/details/136-4.jpg" width="500" height="500" class="block swiper-lazy swiper-lazy-loaded" alt="">
+                </div>
+              </div> -->
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets" id="detailTopPicPagination">
+                  <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                </div> -->
+                <!-- Add Arrows -->
+                <!-- <div class="swiper-button-next" id="detailTopPicNext"></div>
+                <div class="swiper-button-prev swiper-button-disabled" id="detailTopPicPrev"></div> -->
+            </div>
+          </div>
+          <div class="fr detailInfo table">
+            <div class="table-cell vm">
+              <div class="dtInfoHd">
+                <span class="fl f28 fb">致爱-沉醉</span>
+                <span class="fr f32 cred" id="priceInfo">1314.00</span>
+              </div>
+              <div id="discountInfo">
+                <div class="dtInfoHd clearfix mt10">
+                <span class="fr f20 cred"></span>
+              </div>
+              </div>
+              <div class="oh">
+              <span class="fl labelName">选择规格</span>
+                <div class="deRtCont">
+                  <div class="oh">
+                    <div class="weightList f20 clearfix" id="skuList">
+                      <span class="fl cur" op="skuOne" soldout="0" data-attrid="11525" data-goodid="136" data-skuinfo="{&quot;attrId&quot;:&quot;11525&quot;,&quot;price&quot;:&quot;1314.00&quot;,&quot;freeTableware&quot;:&quot;2&quot;,&quot;name&quot;:&quot;\u4e00\u5957&quot;,&quot;sizeDesc&quot;:&quot;&quot;,&quot;eatDesc&quot;:&quot;\u9002\u54083-5\u4eba\u98df\u7528&quot;,&quot;soldout&quot;:&quot;0&quot;}" data-priceinfo="{&quot;price&quot;:&quot;1314.00&quot;,&quot;discount&quot;:0,&quot;freeGoods&quot;:&quot;&quot;,&quot;activityTitle&quot;:&quot;&quot;}">一套</span>
+                    </div>
+                  </div>
+                    <!--<p class="f20 c6 explain">订购5磅及以上请咨询客服</p>-->
+                </div>
+              </div>
+              <!-- <div class="oh">
+                <div class="deRtCont">
+                  <ul class="standardCont f14 c6 clearfix" id="skuInfo"></ul>
+                  <div class="oh mt40">
+                      <div class="deBtnGroup f18 tc clearfix" style="padding-top:8px;padding-bottom:7px;" id="saleShow">
+                        <a href="javascript:;" class="fl cf joinCartBtn" id="addToCartButton">加入购物车</a>
+                        <a href="javascript:;" class="fl cf bookingBtn" id="buyNowButton">立即购买</a>
+                      </div>
+                      <div class="standardCont" style="color: #666;font-size:18px;text-align:center;display:none;" id="soldOutShow">该商品已售罄</div>
+                  </div>
+                </div>
+              </div>-->
+              <div class="oh" style="padding-top: 50px;">
+                <div class="">
+                  <ul class="standardCont f14 c6 clearfix">
+                    <img src="img/ewm.png" style="width:139px; padding-left: 20px; float: left;">
+                    <div style="float: left;padding-top: 32px;padding-left: 30px;">
+                    <span style="font-size:22px;line-height:42px;font-family:PingFangSC-Medium;">扫描二维码 立即下单</span><br>
+                    <span style="font-size:18px;line-height:28px;font-family:PingFangSC-Medium;">MES每实官方微信公众号</span>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt40 detailArea" id="detailPicList">
+        
+          <img src="img/details/136/content.jpg" load="lazy" width="100%" class="block" alt="" style="display: block;">
+
+          <img src="img/details/136/inebriation01.jpg" load="lazy" width="100%" class="block" alt="" style="display: block;">
+
+          <img src="img/details/136/inebriation02.jpg" load="lazy" width="100%" class="block" alt="" style="display: block;">
+
+          <img src="img/details/136/inebriation03.jpg" load="lazy" width="100%" class="block" alt="" style="display: block;">
+
+          <img src="img/details/136/inebriation04.jpg" load="lazy" width="100%" class="block" alt="" style="display: block;">
+
+          <img src="img/details/136/inebriation05.jpg" load="lazy" width="100%" class="block" alt="" style="display: block;">
+
+          <img src="img/details/common-1.jpg" load="lazy" width="100%" class="block" alt="">
+
+          <img src="img/details/common-2.jpg" load="lazy" width="100%" class="block" alt="">
+
+          <img src="img/details/common-3.png" load="lazy" width="100%" class="block" alt="">
+
+          <img src="img/details/common-4.png" load="lazy" width="100%" class="block" alt="">
+
+          <img src="img/details/common-5.png" load="lazy" width="100%" class="block" alt="">
+
+          <img src="img/details/common-6.png" load="lazy" width="100%" class="block" alt="">
+
+        </div>
+      </div>
+      <div id="cont-ent"></div>
+      <script>
+        $("#cont-ent").load("cont_ent.html")
+      </script>
+    </div>
+    <div id="footer"></div>
+	<script>
+		$("#footer").load("footer.html");
+  </script>
+  <script src="js/carousel.js"></script>
+  <!-- 广告轮播 -->
+  <!-- <script>
+    var i=0;  //现在正在显示第一张图片，从0开始
+    var LIWIDTH=500;  // 设置li的宽度
+    var DURATION=500;  // 设置轮播动画持续的时间
+    var LICOUNT=4;     // 设置li的总个数
+    // 查找显示图片的ul
+    var ulImgs=document.getElementById("ul-imgs");
+    // 查找小圆点的ul
+    var ulIdxs=document.getElementById("ul-idxs");
+    // 查找小圆点的元素列表
+    var lis=ulIdxs.children;
+    // 从当前位置移动到任意一个范围内的位置
+    function moveTo(to){
+      if(to==undefined){      // 如果用户没有传入to,就跳下一张
+          to=i+1;
+      }
+      if(i==0){
+        if(to>i){   // 如果要看当前位置（0）“左边的”的图时才会出问题，所以此时，要把当前位置改为5
+            ulImgs.className="transition";
+        }else{
+          ulImgs.className="";
+          ulImgs.style.marginLeft=-LICOUNT*LIWIDTH+"px";
+          setTimeout(function(){  //把改位置的操作稍加一个不太看得出的延迟
+              moveTo(LICOUNT-1);
+          },100);
+          return;
+        }
+      }
+      // if(i==0){            // 如果滚动从0开始，再加上transion
+      //     ulImgs.className="transition";
+      // }
+      i=to;   // 先将标识第几张图片的变量i变为目标位置
+              // 再用i计算ulImgs的marginLeft距离
+      ulImgs.style.marginLeft=-i*LIWIDTH+"px";
+      for(var li of lis){
+          li.className="";    // 先删除小圆点上所有的class属性
+      }
+        // console.log(i);
+      if(i==LICOUNT){
+        i=0;
+        setTimeout(function(){
+          ulImgs.className="";    //清掉transion属性
+          ulImgs.style.marginLeft=0;
+        },DURATION)
+      }
+      lis[i].className="active";
+    }
+  </script> -->
+  <!-- 实现两个按钮功能 -->
+  <!-- <script>
+    var btnLeft=document.getElementById("btn-left");
+    var btnRight=document.getElementById("btn-right");
+    var canClick=true;
+    function move(n){
+      if(canClick){
+        moveTo(i+n);
+        canClick=false;
+        setTimeout(function(){
+          canClick=true;
+        },DURATION+100);
+      }
+    }
+    btnRight.onclick=function(){
+      move(1)
+    }
+    btnLeft.onclick=function(){
+      move(-1);
+    }
+  </script> -->
+  <!-- 实现索引li跳转响应图片 -->
+  <!-- <script>
+    var ulIdxs=document.getElementById("ul-idxs");
+    var canClick=true;
+    ulIdxs.onclick=function(e){
+      if(canClick){
+        var li=e.target;
+        if(li.nodeName="LI"){
+          if(li.className!="active"){
+            for(var i=0;i<lis.length;i++){
+              if(lis[i]==li){
+                  break;
+              }
+            }
+          moveTo(i);
+          setTimeout(function(){
+            canClick=true;
+          },DURATION);
+          }
+        }
+      }
+    }
+  </script> -->
+  <!-- 实现自动轮播，光标移入可以暂停播放，移出时继续开始播放 -->
+  <!-- <script>
+    var interval=3000;
+    var timer=setInterval(function(){
+      moveTo();
+    },3000);
+    var banner=document.getElementById("banner");
+    banner.onmouseover=function(){
+      clearInterval(timer);
+    }
+    banner.onmouseout=function(){
+      timer=setInterval(function(){
+        moveTo();
+      },3000);
+    }
+  </script> -->
+</body>
+</html>

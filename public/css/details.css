@@ -1,0 +1,182 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.bgGray2 {
+  background-color: #f5f5f5;
+}
+.detailHd {
+  /* height: 50px; */
+  line-height: 50px;
+}
+.tr {
+  text-align: right;
+}
+.fl {
+  float: left;
+  /* display: inline; */
+}
+.fr{
+  float: right;
+  /* display: inline; */
+}
+.fb {
+  font-weight: bold;
+}
+.detail-swiper {
+  width: 100%;
+  height: 500px;
+}
+.detailSlider {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #75665e;
+  padding: 24px;
+  box-sizing:content-box;
+}
+.detailInfo {
+  width: 530px;
+  height: 550px;
+  padding: 0 60px;
+  margin-bottom:0 !important;
+}
+.table {
+  width: 54% !important;
+}
+.table-cell {
+  display: table-cell;
+}
+.table {
+  display: table !important;
+}
+.vm {
+  vertical-align: middle;
+}
+.dtInfoHd {
+  padding-left: 100px;
+  line-height: 32px;
+  padding-bottom: 30px;
+}
+.cred {
+  color: #c4284e;
+}
+.f32 {
+  font-size: 32px;
+}
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.labelName {
+  width: 100px;
+  line-height: 40px;
+  color: #7c7c7d;
+  font-size: 18px;
+}
+.weightList span.cur {
+  background: #666;
+  border-color: #666;
+  color: #fff;
+}
+.weightList span {
+  width: 96px;
+  height: 38px;
+  line-height: 38px;
+  background: #f3f3f3;
+  text-align: center;
+  border: 1px solid #f3f3f3;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.standardCont {
+  background: #f3f3f3;
+  padding: 15px 0;
+}
+.c6 {
+  color: #666;
+}
+element.style {
+  padding-top: 50px;
+}
+
+.oh {
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+  content: ".";
+}
+.mt40 {
+  margin-top: 40px;
+}
+.detailHd {
+  height: 50px;
+  line-height: 50px;
+}
+/* 新增原生JS轮播图效果 */
+#banner{
+  width: 500px;
+  height:500px;
+  overflow: hidden;
+  position: relative;
+}
+#banner #ul-imgs{
+  list-style: none;
+  width: 2500px;
+  white-space: nowrap;
+  margin-left: 0px;
+}
+#banner #ul-imgs img{
+  width: 500px;
+  float: left;
+}
+#ul-idxs{
+  width:96px;
+  list-style: none;
+  white-space: nowrap;
+  z-index: 0;
+  position: absolute;
+  top: 90%;
+  left:50%;
+  margin-left: -48px;
+}
+#ul-idxs li{
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: .2;
+  margin: 0 5px;
+}
+#ul-idxs .active{
+  background-color: #cc164c;
+  opacity: 1;
+  border-bottom: 0px;
+}
+#ul-idxs li:hover{
+    cursor: pointer;
+}
+.transition{
+    transition: .25s;
+}
+#btn-left,#btn-right{
+  top: 50%;
+  width: 18px;
+  height: 34px;
+  position:absolute;
+}
+#btn-left{
+  background-image: url("../img/arrow-lt-light.png");
+}
+#btn-right{  
+  background-image: url("../img/arrow-rt-light.png");
+  right: 0px;
+}
